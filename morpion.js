@@ -74,14 +74,14 @@ function verification() {
         document.getElementById('a3').innerHTML != '')
     ) {
       if (joueur === joueurs[0]) {
-        alert('Le joueur O a gagné !');
+        swal('Good job!', 'Le joueur O a gagné !', 'success');
       } else if (joueur === joueurs[1]) {
-        alert('Le joueur X a gagné !');
+        swal('Good job!', 'Le joueur X a gagné !', 'success');
       }
       rejouer();
     }
     if (nbTours > 8) {
-      alert('Egalité !');
+      swal('Egalité !', '...');
       rejouer();
     }
   }
